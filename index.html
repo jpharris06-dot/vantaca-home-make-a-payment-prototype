@@ -479,12 +479,8 @@ nav.primary-nav{display:flex;flex-direction:column;gap:2px;}
     </main>
 
     <!-- ===================== MAKE A PAYMENT VIEW ===================== -->
-    <main class="view" id="view-payment" hidden style="max-width:620px;">
-      <div class="pay-back" id="back-to-dashboard">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-        Back to Dashboard
-      </div>
-      <div class="pay-head">
+    <main class="view" id="view-payment" hidden style="max-width:620px;padding-top:20px;">
+      <div class="pay-head" style="margin-bottom:16px;">
         <h1>Make a Payment</h1>
         <p class="sub">Waterfront Community Estates &middot; Account #4329980</p>
       </div>
@@ -688,7 +684,6 @@ nav.primary-nav{display:flex;flex-direction:column;gap:2px;}
   }
 
   document.getElementById('go-to-payment').addEventListener('click', goPayment);
-  document.getElementById('back-to-dashboard').addEventListener('click', goDashboard);
   document.getElementById('pay-back-btn').addEventListener('click', goDashboard);
 
   var acSwitch = document.getElementById('autopay-switch');
